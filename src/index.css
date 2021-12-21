@@ -4,7 +4,9 @@ body {
   font-family: Inter, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #7700ee;
+  /* background-color: #7700ee; */
+  background: rgb(79,136,255);
+  background: linear-gradient(137deg, rgba(79,136,255,1) 0%, rgba(255,0,0,1) 100%);
   color: #fff;
   overflow-x: hidden;
 }
@@ -18,7 +20,7 @@ h1 {
 }
 @media screen and (max-width: 768px) {
   h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -138,4 +140,10 @@ button:focus {
 button:disabled {
   opacity: 0.8;
   pointer-events: none;
+}
+
+.logo {
+  max-width: 200px;
+  max-height: 200px;
+  margin: auto;
 }
