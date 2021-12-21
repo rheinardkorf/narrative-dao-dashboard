@@ -5,16 +5,12 @@ import { ethers } from 'ethers';
 // Import Thirdweb.
 import { useWeb3 } from "@3rdweb/hooks";
 import { ThirdwebSDK } from "@3rdweb/sdk";
-// const sdk = new ThirdwebSDK();
+
 const sdk = new ThirdwebSDK();
-// const sdk = new ThirdwebSDK(process.env.REACT_APP_ALCHEMY_URL);
-// const sdk = new ThirdwebSDK("https://api-testnet.polygonscan.com/");
-// const sdk = new ThirdwebSDK("https://matic-mumbai.chainstacklabs.com");
 
 // We can grab a reference to our ERC-1155 contract, the NFT contract.
 const bundleDropModule = sdk.getBundleDropModule(
   "0xb2E036c0E42Be71b060A5DA53e04Bf361bE6770b",
-  // "0xe99424235edbe1c8e31066B5c35Ac66C69016e9B",
 );
 
 // ERC Token.
@@ -201,6 +197,7 @@ const App = () => {
       <div className="landing">
         <img src={'logo.svg'} className="logo" alt="RemarkableDAO Logo"></img>
         <h1>Welcome to RemarkableDAO</h1>
+        <p><small>NOTE: Use Polygon Mumbai Testnet</small></p>
         <button onClick={() => connectWallet("injected")} className="btn-hero">
           Connect Your Wallet
         </button>
